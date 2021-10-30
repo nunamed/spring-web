@@ -58,7 +58,10 @@ public class MainServlet extends HttpServlet {
             out.print("<a href=validate.jsp>退出</a>");
             out.print("</body></html>");
         } else {
+            out.print("<html><body>");
             out.print("用户名或密码错误");
+            out.print("<a href=validate.jsp>返回</a>");
+            out.print("</body></html>");
         }
     }
 }
