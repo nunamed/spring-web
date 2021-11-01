@@ -2,15 +2,12 @@ package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 import POJO.User;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
 import jdbc.SqlSrvDBConn;
 
 public class MainServlet extends HttpServlet {
@@ -30,9 +27,8 @@ public class MainServlet extends HttpServlet {
         String usr = req.getParameter("username");
         String pwd = req.getParameter("password");
         boolean validated = false;
-        SqlSrvDBConn SqlSrvDB;
         try {
-            SqlSrvDB = new SqlSrvDBConn();
+            SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
             ArrayList<User> userList = SqlSrvDB.userquery();
             User usercheck = (User) session.getAttribute("user");
             if (usercheck == null) {
