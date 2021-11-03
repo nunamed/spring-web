@@ -15,6 +15,6 @@
             <interceptor-ref name="MyInterceptor"></interceptor-ref>
         </action>
     </package>
-    <constant name="struts.il8n.encoding" value="gb2312"/>
+    <constant name="struts.i18n.encoding" value="gb2312"/>
     
 </struts>
