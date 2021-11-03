@@ -1,4 +1,5 @@
 action\MainAction.class
+tool\MyInterceptor.class
 tool\BeanListHandler.class
 servlet\MainServlet.class
 POJO\User.class

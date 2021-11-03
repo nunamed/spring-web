@@ -4,9 +4,16 @@
     "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
     <package name="default" extends="struts-default">
+        <interceptors>
+            <interceptor name="MyInterceptor" class="tool.MyInterceptor"></interceptor>
+        </interceptors>
+        <!-- <default-interceptor-ref name=""></default-interceptor-ref> -->
         <action name="main" class="action.MainAction">
             <result name="success">main.jsp</result>
             <result name="error">error.jsp</result>
+            <result name="input">index.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <interceptor-ref name="MyInterceptor"></interceptor-ref>
         </action>
     </package>
     <constant name="struts.il8n.encoding" value="gb2312"/>

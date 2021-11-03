@@ -7,7 +7,7 @@
     %><jsp:forward page="MainServlet"/><%
     }
 %>
-<s:form action="main" method="post" theme="simple">
+<s:form action="main" method="post">
     <table>
         <caption>用户登录</caption>
         <tr>
