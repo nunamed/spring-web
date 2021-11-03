@@ -43,6 +43,11 @@ public class MainAction extends ActionSupport {
             return ERROR;
         }
     }
+    public void validate(){
+        if(user.getUsername()==null||user.getUsername().trim().equals("")){
+            addFieldError("user.username", "用户名必须填");
+        }
+    }
        public User getUser() {
            return user;
        }
