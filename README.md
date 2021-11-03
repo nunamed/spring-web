@@ -1,3 +1,3 @@
 # spring-web
-当前进度：servlet Model2 
-JSP+Servlet+JavaBean+JDBC
+当前进度：Struts2 
+JSP+Struts2+JavaBean+JDBC
