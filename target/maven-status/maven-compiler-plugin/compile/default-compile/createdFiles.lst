@@ -1,4 +1,6 @@
+tool\SetEncodingFilter.class
 action\MainAction.class
+action\UploadAction.class
 tool\MyInterceptor.class
 tool\BeanListHandler.class
 servlet\MainServlet.class

@@ -12,10 +12,11 @@ import jdbc.SqlSrvDBConn;
 
 public class MainAction extends ActionSupport {
     private User user;
+    private boolean validated;
     public String execute() throws Exception{
         String usr = user.getUsername();
         String pwd = user.getPassword();
-        boolean validated = false;
+        validated = false;
         ActionContext context=ActionContext.getContext();
         Map<String, Object> session = context.getSession();
         try {

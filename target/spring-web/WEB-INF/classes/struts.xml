@@ -7,7 +7,6 @@
         <interceptors>
             <interceptor name="MyInterceptor" class="tool.MyInterceptor"></interceptor>
         </interceptors>
-        <!-- <default-interceptor-ref name=""></default-interceptor-ref> -->
         <action name="main" class="action.MainAction">
             <result name="success">main.jsp</result>
             <result name="error">error.jsp</result>
@@ -15,7 +14,11 @@
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <interceptor-ref name="MyInterceptor"></interceptor-ref>
         </action>
+        <action name="upload" class="action.UploadAction">
+            <result name="success">validate.jsp</result>
+        </action>
     </package>
-    <constant name="struts.il8n.encoding" value="gb2312"/>
+    <constant name="struts.multipart.saveDir" value="/tmp"></constant>
+    <constant name="struts.i18n.encoding" value="utf-8"/>
     
 </struts>

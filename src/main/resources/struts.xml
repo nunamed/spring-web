@@ -14,7 +14,11 @@
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <interceptor-ref name="MyInterceptor"></interceptor-ref>
         </action>
+        <action name="upload" class="action.UploadAction">
+            <result name="success">validate.jsp</result>
+        </action>
     </package>
-    <constant name="struts.i18n.encoding" value="gb2312"/>
+    <constant name="struts.multipart.saveDir" value="/tmp"></constant>
+    <constant name="struts.i18n.encoding" value="utf-8"/>
     
 </struts>

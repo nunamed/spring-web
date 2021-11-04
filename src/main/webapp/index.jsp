@@ -2,11 +2,6 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
 <body>
-<%
-    if(session.getAttribute("user")!=null){
-    %><jsp:forward page="MainServlet"/><%
-    }
-%>
 <s:form action="main" method="post">
     <table>
         <caption>用户登录</caption>
