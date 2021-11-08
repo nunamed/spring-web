@@ -17,6 +17,9 @@
         <action name="upload" class="action.UploadAction">
             <result name="success">validate.jsp</result>
         </action>
+        <action name="register" class="action.RegisterAction">
+            <result name="success">index.jsp</result>
+        </action>
     </package>
     <constant name="struts.multipart.saveDir" value="/tmp"></constant>
     <constant name="struts.i18n.encoding" value="utf-8"/>

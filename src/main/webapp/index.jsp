@@ -2,7 +2,8 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
 <body>
-<s:form action="main" method="post">
+<div align="center">
+<s:form action="main" method="post" theme="simple">
     <table>
         <caption>用户登录</caption>
         <tr>
@@ -21,6 +22,7 @@
     <s:submit value="登录"/>
     <s:reset value="重置"/>
 </s:form>
-如果没有注册单击<a href="">这里</a>
+如果没有注册单击<a href="register.jsp">这里</a>
+</div>
 </body>
 </html>
