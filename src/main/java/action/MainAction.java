@@ -13,6 +13,7 @@ import jdbc.SqlSrvDBConn;
 public class MainAction extends ActionSupport {
     private User user;
     private boolean validated;
+    ArrayList<User> userList;
     public String execute() throws Exception{
         String usr = user.getUsername();
         String pwd = user.getPassword();
@@ -21,7 +22,7 @@ public class MainAction extends ActionSupport {
         Map<String, Object> session = context.getSession();
         try {
             SqlSrvDBConn SqlSrvDB = SqlSrvDBConn.getInstance();
-            ArrayList<User> userList = SqlSrvDB.userquery();
+            userList = SqlSrvDB.userquery();
             User usercheck = (User) session.get("user");
             if (usercheck == null) {
                 for (User user : userList) {
@@ -44,11 +45,7 @@ public class MainAction extends ActionSupport {
             return ERROR;
         }
     }
-    public void validate(){
-        if(user.getUsername()==null||user.getUsername().trim().equals("")){
-            addFieldError("user.username", "用户名必须填");
-        }
-    }
+
        public User getUser() {
            return user;
        }

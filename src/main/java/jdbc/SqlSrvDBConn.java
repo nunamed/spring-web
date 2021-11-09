@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
+import POJO.Comment;
 import POJO.User;
 import tool.BeanListHandler;
 
@@ -54,5 +55,15 @@ public class SqlSrvDBConn {
             return false;
         }
 
+    }
+    public ArrayList<Comment> commentquery() throws Exception{
+        String sql = "SELECT * FROM comment";
+        prepareStatement = connection.prepareStatement(sql);
+        ResultSet resultSet = prepareStatement.executeQuery();
+        BeanListHandler<Comment> bh = new BeanListHandler<Comment>(Comment.class);
+        ArrayList<Comment> comments = bh.hander(resultSet);
+        resultSet.close();
+        prepareStatement.close();
+        return comments;
     }
 }

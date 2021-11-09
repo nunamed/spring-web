@@ -11,8 +11,6 @@
             <result name="success">main.jsp</result>
             <result name="error">error.jsp</result>
             <result name="input">index.jsp</result>
-            <interceptor-ref name="defaultStack"></interceptor-ref>
-            <interceptor-ref name="MyInterceptor"></interceptor-ref>
         </action>
         <action name="upload" class="action.UploadAction">
             <result name="success">validate.jsp</result>
@@ -20,6 +18,17 @@
         <action name="register" class="action.RegisterAction">
             <result name="success">index.jsp</result>
             <result name="input">register.jsp</result>
+        </action>
+        <action name="quit" class="action.QuitAction">
+            <result name="success">main.jsp</result>
+        </action>
+        <action name="comment" class="action.CommentAction">
+            <result name="success">main.jsp</result>
+        </action>
+        <action name="commentinsert" class="action.CommentInsertAction">
+            <result name="success">main.jsp</result>
+            <result name="error">index.jsp</result>
+            <result name="input">comment.jsp</result>
         </action>
     </package>
     <constant name="struts.multipart.saveDir" value="/tmp"></constant>
