@@ -14,11 +14,13 @@ public class UploadAction extends ActionSupport{
     private List<String> uploadFileName;
     
     public String execute() throws Exception{
-        String path = "F:\\upload\\";
+        String path =this.getClass().getClassLoader().getResource("/").getPath();
         File file = new File(path);
-                if(!file.isDirectory()){
-                    file.mkdir();
-                }
+        path = file.getParentFile().getParentFile()+"\\image\\";
+        file=new File(path);
+        if(!file.isDirectory()){
+            file.mkdir();
+        }
         if(upload!=null){
             for(int i=0;i<upload.size();i++){
                 InputStream is =new FileInputStream(upload.get(i));

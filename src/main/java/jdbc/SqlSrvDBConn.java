@@ -13,13 +13,21 @@ import tool.BeanListHandler;
 public class SqlSrvDBConn {
     private Connection connection;
     private PreparedStatement prepareStatement;
-    public SqlSrvDBConn() throws ClassNotFoundException, SQLException{
+    private static SqlSrvDBConn instance;
+    private SqlSrvDBConn() throws ClassNotFoundException, SQLException{
         String url = "jdbc:mysql://127.0.0.1:3306/test";
         String username = "root";
         String password = "123456";
         Class.forName("com.mysql.jdbc.Driver");
         connection = DriverManager.getConnection(url, username, password);
     }
+    public static synchronized SqlSrvDBConn getInstance() throws ClassNotFoundException, SQLException {  
+        if (instance == null) {  
+            instance = new SqlSrvDBConn();
+        }  
+        return instance;  
+    }
+
     public ArrayList<User> userquery() throws Exception{
         String sql = "SELECT * FROM usertable";
         prepareStatement = connection.prepareStatement(sql);
@@ -31,13 +39,14 @@ public class SqlSrvDBConn {
         // }
         ArrayList<User> users = bh.hander(resultSet);
         resultSet.close();
-        connection.close();
+        prepareStatement.close();
         return users;
     }
     public boolean update(String sql){
         try{
             prepareStatement = connection.prepareStatement(sql);
             prepareStatement.executeUpdate();
+            prepareStatement.close();
             return true;
 
         }catch(Exception e){

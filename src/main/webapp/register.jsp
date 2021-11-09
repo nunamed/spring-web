@@ -30,7 +30,6 @@
             </table>
             <s:submit value="注册"/>
             <s:reset value="重置"/>
-       
         </s:form>
         </div>
     </body>

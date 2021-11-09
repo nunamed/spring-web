@@ -20,7 +20,7 @@ public class MainAction extends ActionSupport {
         ActionContext context=ActionContext.getContext();
         Map<String, Object> session = context.getSession();
         try {
-            SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
+            SqlSrvDBConn SqlSrvDB = SqlSrvDBConn.getInstance();
             ArrayList<User> userList = SqlSrvDB.userquery();
             User usercheck = (User) session.get("user");
             if (usercheck == null) {

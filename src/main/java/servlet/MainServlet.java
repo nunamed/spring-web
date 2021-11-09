@@ -28,7 +28,7 @@ public class MainServlet extends HttpServlet {
         String pwd = req.getParameter("password");
         boolean validated = false;
         try {
-            SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
+            SqlSrvDBConn SqlSrvDB = SqlSrvDBConn.getInstance();
             ArrayList<User> userList = SqlSrvDB.userquery();
             User usercheck = (User) session.getAttribute("user");
             if (usercheck == null) {
