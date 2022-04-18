@@ -3,7 +3,11 @@ action\RegisterAction.class
 tool\MyInterceptor.class
 tool\BeanListHandler.class
 POJO\User.class
+action\CommentInsertAction.class
 action\MainAction.class
+POJO\Comment.class
 action\UploadAction.class
+action\CommentAction.class
+action\QuitAction.class
 servlet\MainServlet.class
 jdbc\SqlSrvDBConn.class
