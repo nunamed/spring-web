@@ -10,7 +10,7 @@ public class LoginController implements Controller{
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return new ModelAndView("register.jsp");
+        return new ModelAndView("register");
     }
     
 }

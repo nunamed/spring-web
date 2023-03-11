@@ -9,6 +9,6 @@ import jakarta.servlet.http.HttpServletResponse;
 public class RegisterController implements Controller{
     @Override
     public ModelAndView handleRequest(HttpServletRequest arg0,HttpServletResponse arg1)throws Exception{
-        return new ModelAndView("register.jsp");
+        return new ModelAndView("register");
     }
 }

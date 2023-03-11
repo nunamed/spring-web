@@ -5,4 +5,8 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean name="/login" class="controller.LoginController"/>
 <bean name="/register" class="controller.RegisterController"/>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+    <property name="prefix" value="/"></property>
+    <property name="suffix" value=".jsp"></property>
+</bean>
 </beans>
