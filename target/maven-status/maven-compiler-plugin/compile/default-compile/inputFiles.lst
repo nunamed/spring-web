@@ -1,13 +1,14 @@
 /Users/nunamed/Documents/spring-web/src/main/java/action/MainAction.java
 /Users/nunamed/Documents/spring-web/src/main/java/action/QuitAction.java
+/Users/nunamed/Documents/spring-web/src/main/java/controller/IndexController.java
 /Users/nunamed/Documents/spring-web/src/main/java/jdbc/SqlSrvDBConn.java
-/Users/nunamed/Documents/spring-web/src/main/java/controller/RegisterController.java
+/Users/nunamed/Documents/spring-web/src/main/java/controller/UserController.java
 /Users/nunamed/Documents/spring-web/src/main/java/action/CommentAction.java
 /Users/nunamed/Documents/spring-web/src/main/java/action/UploadAction.java
 /Users/nunamed/Documents/spring-web/src/main/java/POJO/Comment.java
 /Users/nunamed/Documents/spring-web/src/main/java/tool/SetEncodingFilter.java
-/Users/nunamed/Documents/spring-web/src/main/java/controller/LoginController.java
 /Users/nunamed/Documents/spring-web/src/main/java/action/CommentInsertAction.java
+/Users/nunamed/Documents/spring-web/src/main/java/POJO/UserForm.java
 /Users/nunamed/Documents/spring-web/src/main/java/action/RegisterAction.java
 /Users/nunamed/Documents/spring-web/src/main/java/POJO/User.java
 /Users/nunamed/Documents/spring-web/src/main/java/tool/MyInterceptor.java
