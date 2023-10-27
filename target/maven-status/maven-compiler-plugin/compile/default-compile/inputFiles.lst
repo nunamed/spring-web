@@ -3,6 +3,8 @@
 /Users/nunamed/Documents/spring-web/src/main/java/controller/IndexController.java
 /Users/nunamed/Documents/spring-web/src/main/java/jdbc/SqlSrvDBConn.java
 /Users/nunamed/Documents/spring-web/src/main/java/controller/UserController.java
+/Users/nunamed/Documents/spring-web/src/main/java/service/UserServiceImpl.java
+/Users/nunamed/Documents/spring-web/src/main/java/service/UserService.java
 /Users/nunamed/Documents/spring-web/src/main/java/action/CommentAction.java
 /Users/nunamed/Documents/spring-web/src/main/java/action/UploadAction.java
 /Users/nunamed/Documents/spring-web/src/main/java/POJO/Comment.java

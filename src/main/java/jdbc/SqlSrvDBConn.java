@@ -34,7 +34,7 @@ public class SqlSrvDBConn {
         prepareStatement = connection.prepareStatement(sql);
         ResultSet resultSet = prepareStatement.executeQuery();
         BeanListHandler<User> bh = new BeanListHandler<User>(User.class);
-        // ArrayList<String> User =new ArrayList<>();
+        // ArrayList<String> UserList =new ArrayList<>();
         // for(User user:UserList){
         //     User.add("Username:"+user.getUsername()+",Password:"+user.getPassword());
         // }
