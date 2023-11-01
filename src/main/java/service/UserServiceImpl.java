@@ -1,7 +1,10 @@
 package service;
 
+import org.springframework.stereotype.Service;
+
 import POJO.UserForm;
 
+@Service
 public class UserServiceImpl implements UserService{
 
     @Override

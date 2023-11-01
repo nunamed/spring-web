@@ -25,7 +25,7 @@ public class UserController {
     @RequestMapping("/login")
     public String login(@ModelAttribute UserForm user,HttpSession session,Model model) throws ServletException, IOException {
         if (userService.login(user)) {
-            session.setAttribute("u", user);
+            session.setAttribute("user", user);
             logger.info("成功");
             return "main";
         }else{

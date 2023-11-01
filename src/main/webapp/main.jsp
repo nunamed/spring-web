@@ -1,19 +1,27 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ page import="POJO.UserForm"%>
+<%-- <%@ taglib prefix="s" uri="/struts-tags"%> --%>
 <html>
     <head>
         <title>留言板信息</title>
     </head>
     <body>
+        <%
+        UserForm user = (UserForm)session.getAttribute("user");
+        out.println(user.getUname());
+        %>
+        ${user.uname}
+        ${user.getUpass()}
+        <%--
         <s:set var="user" value="#session['user']"/>
         <s:if test="#user==null">
             <div align="center"><a href="index.jsp">请先登录</a></div>
         </s:if>
         <s:else>
-             <div align="right"><s:property value="#user.username"/>，您好！<s:a action="quit">退出</s:a></div>
+             <div align="right"><s:property value="#user.uname"/>，您好！</div>
         </s:else>
-        <s:action name="comment" var="comments"></s:action>
-        <div align="center">
+        <s:action name="comment" var="comments"></s:action>  --%>
+        <%-- <div align="center">
         <table border="1" >
             <caption>留言板</caption>
             <tr>
@@ -30,7 +38,7 @@
             </s:iterator>
         </table>
         <button onclick="JavaScript:window.open('comment.jsp')">添加</button>
-        </div>
+        </div> --%>
         <%-- <s:form action="upload" method="post" enctype="multipart/form-data">
             <s:file name="upload" label="上传的文件"></s:file>
             <s:file name="upload" label="上传的文件"></s:file>
