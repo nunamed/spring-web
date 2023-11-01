@@ -23,7 +23,7 @@ public class UserController {
     @Autowired
     public UserService userService;
     @RequestMapping("/login")
-    public String login(@ModelAttribute UserForm user,HttpSession session,Model model) throws ServletException, IOException {
+    public String login(@ModelAttribute("user") UserForm user,HttpSession session,Model model) throws ServletException, IOException {
         if (userService.login(user)) {
             session.setAttribute("user", user);
             logger.info("成功");
@@ -47,7 +47,7 @@ public class UserController {
         // }
     }
     @RequestMapping("/register")
-    public String register(@ModelAttribute UserForm user,HttpSession session,Model model){
+    public String register(@ModelAttribute("user") UserForm user){
         if(userService.register(user)){
             logger.info("成功");
             return "login";

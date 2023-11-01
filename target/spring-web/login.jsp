@@ -9,7 +9,7 @@
                 </tr>
                 <tr>
                     <td>姓名：</td>
-                    <td><input class="textSize" type="text" name="uname" value="${name}"/></td>
+                    <td><input class="textSize" type="text" name="uname" value="${user.getUname()}"/></td>
                 </tr>
                 <tr>
                     <td>密码：</td>

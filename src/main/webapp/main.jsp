@@ -6,10 +6,10 @@
         <title>留言板信息</title>
     </head>
     <body>
-        <%
+        <%-- <%
         UserForm user = (UserForm)session.getAttribute("user");
         out.println(user.getUname());
-        %>
+        %> --%>
         ${user.uname}
         ${user.getUpass()}
         <%--
