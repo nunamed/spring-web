@@ -3,7 +3,7 @@
 <html>
 <body>
 <s:if test="#session['user']!=null">
-    <jsp:forward page="main.jsp"/>
+    <jsp:forward page="main.jsp"/>=
 </s:if>
 <div align="center">
 <s:form action="main" method="post" theme="simple">

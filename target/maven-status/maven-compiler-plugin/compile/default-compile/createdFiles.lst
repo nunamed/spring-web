@@ -1,13 +1,17 @@
 tool\SetEncodingFilter.class
 action\RegisterAction.class
+controller\UserController.class
 tool\MyInterceptor.class
 tool\BeanListHandler.class
+dao\UserDao.class
 POJO\User.class
+controller\TestController.class
 action\CommentInsertAction.class
 action\MainAction.class
 POJO\Comment.class
 action\UploadAction.class
 action\CommentAction.class
+mybatis\MybatisTest.class
 action\QuitAction.class
 servlet\MainServlet.class
 jdbc\SqlSrvDBConn.class

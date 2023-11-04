@@ -1,3 +1,5 @@
+f:\spring-web\src\main\java\controller\UserController.java
+f:\spring-web\src\main\java\mybatis\MybatisTest.java
 f:\spring-web\src\main\java\action\CommentInsertAction.java
 f:\spring-web\src\main\java\action\MainAction.java
 f:\spring-web\src\main\java\POJO\User.java
@@ -5,8 +7,10 @@ f:\spring-web\src\main\java\tool\MyInterceptor.java
 f:\spring-web\src\main\java\action\CommentAction.java
 f:\spring-web\src\main\java\action\QuitAction.java
 f:\spring-web\src\main\java\action\UploadAction.java
+f:\spring-web\src\main\java\dao\UserDao.java
 f:\spring-web\src\main\java\servlet\MainServlet.java
 f:\spring-web\src\main\java\POJO\Comment.java
+f:\spring-web\src\main\java\controller\TestController.java
 f:\spring-web\src\main\java\jdbc\SqlSrvDBConn.java
 f:\spring-web\src\main\java\action\RegisterAction.java
 f:\spring-web\src\main\java\tool\SetEncodingFilter.java

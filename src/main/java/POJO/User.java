@@ -53,4 +53,8 @@ public class User {
     public void setCreatedate(String createdate) {
         this.createdate = createdate;
     }
+    @Override
+    public String toString(){
+        return "ID:"+this.getId()+"\tName:"+this.getName()+"\tUsername:"+this.getUsername()+"\tPassword:"+this.getPassword();
+    }
 }
