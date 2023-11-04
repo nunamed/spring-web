@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 tool\SetEncodingFilter.class
 action\RegisterAction.class
 controller\UserController.class
@@ -15,3 +16,18 @@ mybatis\MybatisTest.class
 action\QuitAction.class
 servlet\MainServlet.class
 jdbc\SqlSrvDBConn.class
+=======
+action/MainAction.class
+action/UploadAction.class
+tool/BeanListHandler.class
+tool/MyInterceptor.class
+servlet/MainServlet.class
+tool/SetEncodingFilter.class
+action/CommentInsertAction.class
+POJO/User.class
+action/RegisterAction.class
+POJO/Comment.class
+action/QuitAction.class
+action/CommentAction.class
+jdbc/SqlSrvDBConn.class
+>>>>>>> 4c61fab5e3d541f43578a74ef1329e094add1fb5

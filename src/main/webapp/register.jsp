@@ -1,36 +1,28 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <body>
-        <div align="center">
-        <s:form action="register" method="post">
-        
-            <table>
-                <caption>用户注册</caption>
+       <form action="${pageContext.request.contextPath}/user/register" method="post" name="registForm">
+            <table border=1 bgcolor="lightblue" align="center">
                 <tr>
-                    <td><s:textfield name="user.username" label="用户名" size="20"/>
-                    </td>
+                    <td colspan="2" align="center">用户注册</td>
                 </tr>
                 <tr>
-                    <td><s:password name="user.password" label="密码" size="21"/>
-                    </td>
+                    <td>姓名：</td>
+                    <td><input class="textSize" type="text" name="uname" value="${user.uname}"/></td>
                 </tr>
                 <tr>
-                    <td><s:textfield name="user.name" label="真实姓名" size="20"/>
-                    </td>
+                    <td>密码：</td>
+                    <td><input class="textSize" type="password" name="upass" maxlength="20"></td>
                 </tr>
                 <tr>
-                    <td><s:radio name="user.sex" list="#{1:'男',2:'女'}" label="性别" value="1"/>
-                    </td>
+                    <td>确认密码：</td>
+                    <td><input class="textSize" type="password" name="reupass" maxlength="20"></td>
                 </tr>
                 <tr>
-                    <td><s:textfield name="user.grade" label="专业" size="20"/>
-                    </td>
+                    <td colspan="2" align="center"><input type="submit" value="注册"/></td>
                 </tr>
             </table>
-            <s:submit value="注册"/>
-            <s:reset value="重置"/>
-        </s:form>
-        </div>
+       </form>
     </body>
 </html>

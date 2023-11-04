@@ -15,7 +15,7 @@ public class BeanListHandler<T>{
         ArrayList<T> list = new ArrayList<>();
         while(resultSet.next()){
             T obj= classType.getConstructor().newInstance();
-            BeanInfo bi = Introspector.getBeanInfo(classType,Object.class);
+            BeanInfo bi = Introspector.getBeanInfo(this.classType,Object.class);
             PropertyDescriptor[] pds = bi.getPropertyDescriptors();
             for(PropertyDescriptor pd:pds){
                 Object val = resultSet.getObject(pd.getName());
