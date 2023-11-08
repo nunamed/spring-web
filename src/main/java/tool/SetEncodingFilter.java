@@ -1,6 +1,6 @@
 package tool;
 
-import javax.servlet.*;
+import jakarta.servlet.*;
 import java.io.*;
 
 public class SetEncodingFilter implements Filter {

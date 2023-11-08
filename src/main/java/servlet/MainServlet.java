@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 import POJO.User;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
 import jdbc.SqlSrvDBConn;
 
 public class MainServlet extends HttpServlet {
