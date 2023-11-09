@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService{
     public boolean login(UserForm user) {
         List<User> users = userdao.selectAllUser();
         for (User datauser:users){
-            if(datauser.getName().equals(user.getUname())&&datauser.getPassword().equals(user.getUpass())){
+            if(datauser.getUsername().equals(user.getUname())&&datauser.getPassword().equals(user.getUpass())){
                 return true;
             } 
         }
