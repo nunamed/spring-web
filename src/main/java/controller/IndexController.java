@@ -8,7 +8,10 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class IndexController {
     @RequestMapping("/login")
-    public String login() {
+    public String login(HttpSession session) {
+        if(session.getAttribute("user")!=null){
+           return "main"; 
+        }
         return "login";
     }
     @RequestMapping("/register")
