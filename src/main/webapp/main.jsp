@@ -6,11 +6,16 @@
         <title>留言板信息</title>
     </head>
     <body>
-        <%-- <%
+        <%
         UserForm user = (UserForm)session.getAttribute("user");
-        out.println(user.getUname());
-        %> --%>
+        if(user==null){
+        %>
+         <div align="center"><a href="login.jsp">请先登录</a></div>
+        <%}%>
+        ${user}
+        <br />
         ${user.uname}
+         <br />
         ${user.getUpass()}
         <%--
         <s:set var="user" value="#session['user']"/>
