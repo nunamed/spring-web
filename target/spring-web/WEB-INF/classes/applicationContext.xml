@@ -11,12 +11,6 @@ http://www.springframework.org/schema/tx
 http://www.springframework.org/schema/tx/spring-tx.xsd">
 <context:component-scan base-package="dao"/>
 <context:component-scan base-package="service"/>
-<context:component-scan base-package="controller"/>
-<!-- 配置视图编辑器 -->
-<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
-    <property name="prefix" value="/"></property>
-    <property name="suffix" value=".jsp"></property>
-</bean>
 <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
     <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
     <property name="url" value="jdbc:mysql://localhost:3306/test?characterEncoding=utf-8"></property>
